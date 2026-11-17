@@ -1,12 +1,28 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+
+
+interface Producto {
+  nombre: string;
+  precio: number;
+  disponible: boolean;
+}
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('mi-app');
+  nombreTienda: string = 'TecnoStore';
+  encargado: string = 'Arian Mealla';
+  numeroSucursal: number = 3;
+  tiendaAbierta: boolean = true;
+  categorias: string[] = ['Celulares', 'Accesorios', 'Audífonos'];
+
+  producto: Producto = {
+    nombre: 'Samsung Galaxy A55',
+    precio: 3200,
+    disponible: true
+  };
 }

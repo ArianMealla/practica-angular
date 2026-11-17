@@ -1,0 +1,4 @@
+.tienda { max-width: 500px; margin: 40px auto; font-family: sans-serif; }
+.producto { border: 1px solid #ccc; border-radius: 8px; padding: 16px; margin-top: 20px; }
+.ok { color: green; font-weight: bold; }
+.no { color: red; font-weight: bold; }
